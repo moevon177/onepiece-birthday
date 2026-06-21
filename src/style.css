@@ -434,7 +434,7 @@ body {
 .bounty-bounty {
   text-align: center;
   font-family: var(--font-pirate);
-  font-size: 28px;
+  font-size: 26px;
   color: var(--red);
   padding: 4px 0;
 }
