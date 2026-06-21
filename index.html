@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 25th Birthday - Sayangku Seliyaa 🏴‍☠️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/logo_onepiece.svg" type="image/svg+xml" />
+</head>
+<body>
+  <div id="splash"></div>
+  <canvas id="confetti-canvas"></canvas>
+  <canvas id="particle-canvas"></canvas>
+  <div class="impact-flash" id="impactFlash"></div>
+
+  <section id="hero" class="section hero">
+    <div class="hero-waves">
+      <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
+        <path d="M0,100 C360,200 720,0 1080,100 C1260,160 1350,100 1440,80 L1440,200 L0,200 Z" fill="rgba(11,59,96,0.4)"/>
+      </svg>
+      <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
+        <path d="M0,120 C360,200 720,40 1080,120 C1260,170 1350,110 1440,90 L1440,200 L0,200 Z" fill="rgba(11,59,96,0.25)"/>
+      </svg>
+      <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
+        <path d="M0,140 C360,200 720,60 1080,140 C1260,180 1350,130 1440,110 L1440,200 L0,200 Z" fill="rgba(245,215,66,0.07)"/>
+      </svg>
+    </div>
+    <div id="speed-lines-bg" class="speed-lines-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge" id="heroBadge">🏴‍☠️ STRAW HAT PIRATES</div>
+      <h1 class="hero-title" id="heroTitle">
+        Happy 25th Birthday!
+        <span>Sayangku Seliyaa</span>
+      </h1>
+      <p class="hero-sub" id="heroSub">— Nakama Sejati —</p>
+    </div>
+    <img src="/kapal_1.png" alt="Thousand Sunny" class="hero-ship" id="heroShip" />
+    <div class="scroll-indicator" id="scrollIndicator">▼ SCROLL ▼</div>
+  </section>
+
+  <section id="letter" class="section letter-section">
+    <h2 class="section-title">📜 Surat untuk Mu</h2>
+    <div class="letter-paper" id="letterPaper">
+      <div class="letter-stamp">🏴‍☠️</div>
+      <div class="letter-title">Untuk Seliyaa,</div>
+      <div class="letter-divider"></div>
+      <div class="letter-text">
+        <span id="typewriter"></span><span class="cursor-blink" id="cursorBlink"></span>
+      </div>
+      <div class="letter-sign">— Dari Orang yang menyayangimu</div>
+    </div>
+  </section>
+
+  <section id="bounty" class="section bounty-section">
+    <h2 class="section-title">🏴‍☠️ WANTED</h2>
+    <p class="section-sub">Buronan nomor satu di hati!</p>
+    <div class="bounty-poster" id="bountyPoster">
+      <div class="bounty-header">ONE PIECE</div>
+      <div class="bounty-photo" id="bountyPhoto">
+        <img src="/seliyaa.jpeg" alt="Seliyaa" />
+      </div>
+      <div class="bounty-name">SELIYAA</div>
+      <div class="bounty-bounty">✦ <span>25,000,000</span> BERRIES ✦</div>
+      <div class="bounty-deadline">Deadline: Selamanya ❤️</div>
+    </div>
+  </section>
+
+  <section id="nakama" class="section nakama-section">
+    <h2 class="section-title">👥 Kata Nakama</h2>
+    <p class="section-sub">Pesan dari kru untukmu</p>
+    <div class="nakama-grid">
+      <div class="nakama-card">
+        <span class="nakama-icon">👒</span>
+        <p class="nakama-quote">"Aku jadi raja bajak laut bukan untuk diriku sendiri, tapi untuk melindungi teman-temanku! Selamat ulang tahun, Nakama!"</p>
+        <div class="nakama-author">— Monkey D. Luffy</div>
+      </div>
+      <div class="nakama-card">
+        <span class="nakama-icon">🗡️</span>
+        <p class="nakama-quote">"Seorang bajak laut sejati tidak pernah menangis... tapi untuk senyummu, aku akan melindungimu sampai akhir. Selamat ulang tahun!"</p>
+        <div class="nakama-author">— Roronoa Zoro</div>
+      </div>
+      <div class="nakama-card">
+        <span class="nakama-icon">🍊</span>
+        <p class="nakama-quote">"Harta yang paling berharga bukanlah emas atau berlian, tapi kebahagiaan orang-orang yang kita cintai. Happy 25th!"</p>
+        <div class="nakama-author">— Nami</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cake" class="section cake-section">
+    <h2 class="section-title">🎂 Kue Impian</h2>
+    <div class="cake-container" id="cakeContainer">
+      <div class="cake" id="cakeEmoji">
+        🎂
+        <div class="candle">
+          🕯️
+          <div class="candle-fire" id="candleFire"></div>
+        </div>
+      </div>
+      <div class="cake-text">Tiup lilinnya & buat wish!</div>
+      <div class="cake-hint" id="cakeHint">(klik lilin untuk tiup)</div>
+      <div class="wish-bubble" id="wishBubble">
+        ✨ Wish terwujud! Semua impianmu jadi kenyataan! ✨
+      </div>
+    </div>
+  </section>
+
+  <section id="treasure" class="section treasure-section">
+    <h2 class="section-title">💎 Harta Karun</h2>
+    <p class="section-sub">Klik peti untuk membuka hadiah spesial!</p>
+    <div class="treasure-chest" id="treasureChest">📦</div>
+    <div class="treasure-surprise" id="treasureSurprise">
+      <h2 class="treasure-title">🏆 Selamat! 🏆</h2>
+      <p>Kamu menemukan harta karun terbesar:</p>
+      <p class="treasure-love">CINTA & KEBAHAGIAAN SELAMANYA! ❤️</p>
+      <div class="hearts">💖💛💖💛💖</div>
+      <p class="treasure-footer">— Untuk Seliyaa, nakama sejati selamanya —</p>
+    </div>
+  </section>
+
+  <section class="section footer">
+    <div class="footer-text">🏴‍☠️ To the Next Adventure! 🏴‍☠️</div>
+    <div class="footer-sub">Sayangku Seliyaa • 25 • One Piece © 2026</div>
+  </section>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
